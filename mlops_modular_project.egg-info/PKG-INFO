@@ -1,0 +1,94 @@
+Metadata-Version: 2.4
+Name: mlops_modular_project
+Version: 0.1.0
+Summary: A modular MLOps Pipeline Project
+Home-page: https://github.com/nahidsephorasg/mlops-basics-project-setup
+Author: Md Nahid Mondol
+Author-email: mohdnahidmondol@gmail.com
+Classifier: Development Status :: 1 - Beta
+Classifier: Intended Audience :: ML Engineers
+Classifier: Programming Language :: Python >= 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: pytest>=7.1.1; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.1; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: black>=22.3.0; extra == "dev"
+Requires-Dist: isort>=5.10.1; extra == "dev"
+Requires-Dist: mypy>=0.942; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Modular-Workflow-and-Project-Setup-Basics
+# Problem Statement:
+## Business Context:
+The project aims to develop a machine learning system that pr
+edicts individual income levels based on demographic and empl
+oyment data.
+
+
+The prediction boundary is set at $50,000 annually (binary cl
+assification problem).
+The solution will help in understanding socio-economic factor
+s affecting income levels.
+Enable data-driven decision making for policy makers and fina
+ncial institutions.
+Identify key socio-economic factors influencing income dispar
+ities.
+Support targeted intervention programs for economic developme
+nt
+## Key Stakeholders
+**Policy Makers:** For evidence-based policy development
+**Financial Institutions:** For risk assessment and product d
+evelopment
+**Social Services:** For resource allocation and program plan
+ning
+**Research Organizations:** For socio-economic studies
+# Dataset Details:
+Let's visualize the data structure and features:
+
+```mermaid
+classDiagram
+    class Features {
+        Demographic_Features
+        Employment_Features
+        Financial_Features
+        Other_Features
+    }
+    class Demographic_Features {
+        age: numeric
+        education: categorical
+        education-num: numeric
+        race: categorical
+        sex: categorical
+        country: categorical
+    }
+    class Employment_Features {
+        workclass: categorical
+        occupation: categorical
+        hours-per-week: numeric
+        relationship: categorical
+        marital-status: categorical
+    }
+    class Financial_Features {
+        fnlwgt: numeric
+        capital-gain: numeric
+        capital-loss: numeric
+    }
+    Features --> Demographic_Features
+    Features --> Employment_Features
+    Features --> Financial_Features
+```
+![DataSet Details](dataset-details.png)
