@@ -2,3 +2,24 @@
 venv/
 env/
 ENV/
+.DS_Store
+__pycache__/
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+# Logs
+logs/
+*.log
+# Data files
+data/raw/
+data/processed/
+# Model files
+models/
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

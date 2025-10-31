@@ -1,11 +1,11 @@
 from setuptools import find_packages, setup
 
 # Read requirements.txt
-with open('requirements.txt') as f:
+with open("requirements.txt") as f:
     required = f.read().splitlines()
 
 # Read README.md for long description
-with open('README.md', 'r', encoding='utf-8') as f:
+with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -27,14 +27,13 @@ setup(
     python_requires=">=3.8",
     install_requires=required,
     extras_require={
-        'dev': [
-            'pytest>=7.1.1',
-            'pytest-cov>=2.12.1',
-            'flake8>=3.9.0',
-            'black>=22.3.0',
-            'isort>=5.10.1',
-            'mypy>=0.942',
+        "dev": [
+            "pytest>=7.1.1",
+            "pytest-cov>=2.12.1",
+            "flake8>=3.9.0",
+            "black>=22.3.0",
+            "isort>=5.10.1",
+            "mypy>=0.942",
         ],
-    }
+    },
 )
-

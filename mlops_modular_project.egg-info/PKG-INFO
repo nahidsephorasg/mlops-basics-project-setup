@@ -13,6 +13,8 @@ Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 Requires-Dist: numpy
 Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: dvc
 Provides-Extra: dev
 Requires-Dist: pytest>=7.1.1; extra == "dev"
 Requires-Dist: pytest-cov>=2.12.1; extra == "dev"

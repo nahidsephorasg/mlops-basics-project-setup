@@ -1,9 +1,10 @@
 import os
 
+
 def create_files_and_directories(file_list):
     """
     Create the required directories and files based on the provided list.
-    
+
     Parameters:
     file_list (list): List of file paths to create.
     """
@@ -18,10 +19,11 @@ def create_files_and_directories(file_list):
 
         # Create the file if it does not exist or is empty
         if not os.path.exists(filepath) or os.path.getsize(filepath) == 0:
-            open(filepath, 'a').close()
+            open(filepath, "a").close()
             print(f"Creating empty file: {filepath}")
         else:
             print(f"{filename} already exists")
+
 
 # List of files to be created
 list_of_files = [
@@ -37,7 +39,7 @@ list_of_files = [
     "src/exception.py",
     "src/logger.py",
     "src/utils.py",
-    "main.py"
+    "main.py",
 ]
 
 # Calling the function to create files and directories

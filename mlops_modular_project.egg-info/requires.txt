@@ -1,5 +1,7 @@
 numpy
 pandas
+scikit-learn
+dvc
 
 [dev]
 pytest>=7.1.1
