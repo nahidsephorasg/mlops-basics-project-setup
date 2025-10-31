@@ -2,6 +2,7 @@ numpy
 pandas
 scikit-learn
 dvc
+feast
 
 [dev]
 pytest>=7.1.1

@@ -1,0 +1,8 @@
+project: mlops_project
+registry: /Users/mmondol/Documents/personal/learning-all/MLOps/mlops-project/feature_repo/registry.db
+provider: local
+online_store:
+    type: sqlite
+offline_store:
+    type: file
+entity_key_serialization_version: 3
