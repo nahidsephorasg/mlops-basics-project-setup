@@ -30,7 +30,7 @@ class ModelTrainer:
         self.model_trainer_config = ModelTrainerConfig()
         mlflow.set_tracking_uri(self.model_trainer_config.mlflow_tracking_uri)
         mlflow.set_experiment(self.model_trainer_config.mlflow_experiment_name)
-        
+
         self.run_name = f"Model_Training_Run_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
     def log_model_metrics(self, y_true, y_pred, prefix=""):
@@ -99,7 +99,8 @@ class ModelTrainer:
 
                     plt.figure(figsize=(10, 6))
                     plt.barh(
-                        feature_importances["feature"], feature_importances["importance"]
+                        feature_importances["feature"],
+                        feature_importances["importance"],
                     )
                     plt.xticks(rotation=45)
                     plt.title(f"Feature Importances for {model_name}")
@@ -243,14 +244,12 @@ def main():
         # Import here to avoid circular import
         from src.components.data_ingestion import DataIngestion
         from src.components.data_transformation import DataTransformation
-        
+
         with mlflow.start_run(run_name="Complete_Model_Training_Pipeline"):
             logging.info("Starting complete model training pipeline...")
 
             data_ingestion = DataIngestion()
-            train_data_path, test_data_path = (
-                data_ingestion.initiate_data_ingestion()
-            )
+            train_data_path, test_data_path = data_ingestion.initiate_data_ingestion()
             mlflow.log_param("train_data_path", train_data_path)
             mlflow.log_param("test_data_path", test_data_path)
 

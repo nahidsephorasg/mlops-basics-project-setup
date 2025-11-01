@@ -4,6 +4,7 @@ scikit-learn
 dvc
 feast
 mlflow
+flask
 
 [dev]
 pytest>=7.1.1

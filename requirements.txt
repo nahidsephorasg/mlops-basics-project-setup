@@ -4,3 +4,4 @@ scikit-learn
 dvc
 feast
 mlflow
+flask

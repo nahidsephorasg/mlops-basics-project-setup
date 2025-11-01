@@ -1,41 +1,51 @@
-# flask simple app with logging and custom exception handling
-from flask import Flask, jsonify
-import logging
-from src.logger import LOG_FILE_PATH
+from flask import Flask, jsonify, request
+
+from src.pipelines.prediction_pipeline import PredictionPipeline, CustomClass
 from src.exception import CustomException
 import sys
+import logging
+
 
 app = Flask(__name__)
-logging.basicConfig(
-    filename=LOG_FILE_PATH,
-    format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
-    level=logging.INFO,
-)
 
 
-@app.route("/")
-def home():
-    logging.info("Home route accessed")
-    return "Welcome to the MLOps Project!"
-
-
-@app.route("/error")
-def trigger_error():
+@app.route('/predict', methods=['POST'])
+def predict():
     try:
-        logging.info("Error route accessed, about to trigger an error")
-        # Intentionally trigger a ZeroDivisionError
-        result = 1 / 0
-        return f"Result is {result}"
+        json_data = request.get_json()
+        logging.info("Received prediction request")
+        custom_data = CustomClass(
+            age=int(json_data.get('age')),
+            workclass=int(json_data.get('workclass')),
+            education_num=int(json_data.get('education_num')),
+            marital_status=int(json_data.get('marital_status')),
+            occupation=int(json_data.get('occupation')),
+            relationship=int(json_data.get('relationship')), 
+            race=int(json_data.get('race')),
+            sex=int(json_data.get('sex')),
+            capital_gain=int(json_data.get('capital_gain')),
+            capital_loss=int(json_data.get('capital_loss')),
+            hours_per_week=int(json_data.get('hours_per_week')),
+            native_country=int(json_data.get('native_country'))
+        )
+
+        data_df = custom_data.get_data_as_dataframe()
+        prediction_pipeline = PredictionPipeline()
+        preds = prediction_pipeline.predict(data_df)
+        output = preds[0]
+        logging.info("Prediction successful")
+        return jsonify({
+            'status': 'success',
+            'prediction': output,
+            'income': '>50K' if output == 1 else '<=50K'})
+    
+
     except Exception as e:
-        logging.error("An error occurred in /error route")
-        raise CustomException(str(e), sys) from e
+        logging.error(f"Error during prediction: {str(e)}")
+        return jsonify({
+            'status': 'error',
+            'message': str(e)
+        }), 400
 
-
-@app.errorhandler(CustomException)
-def handle_custom_exception(error):
-    response = {"error": str(error)}
-    return jsonify(response), 500
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5010, debug=True)

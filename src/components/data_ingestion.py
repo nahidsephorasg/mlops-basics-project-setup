@@ -10,7 +10,6 @@ from src.components.model_trainer import ModelTrainer
 from dataclasses import dataclass
 
 
-
 @dataclass
 class DataIngestionConfig:
     train_data_path = os.path.join("artifacts/data_ingestion", "train_data.csv")

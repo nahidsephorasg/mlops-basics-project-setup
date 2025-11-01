@@ -17,6 +17,7 @@ Requires-Dist: scikit-learn
 Requires-Dist: dvc
 Requires-Dist: feast
 Requires-Dist: mlflow
+Requires-Dist: flask
 Provides-Extra: dev
 Requires-Dist: pytest>=7.1.1; extra == "dev"
 Requires-Dist: pytest-cov>=2.12.1; extra == "dev"
