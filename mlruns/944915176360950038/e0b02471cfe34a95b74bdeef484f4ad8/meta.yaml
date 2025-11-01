@@ -1,0 +1,14 @@
+artifact_uri: /Users/mmondol/Documents/personal/learning-all/MLOps/mlops-project/mlruns/944915176360950038/e0b02471cfe34a95b74bdeef484f4ad8/artifacts
+end_time: 1761980455146
+entry_point_name: ''
+experiment_id: '944915176360950038'
+lifecycle_stage: active
+run_id: e0b02471cfe34a95b74bdeef484f4ad8
+run_name: Best_Model_SummaryModel_Training_Run_20251101_150036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761980453582
+status: 3
+tags: []
+user_id: mmondol

@@ -1,0 +1,14 @@
+artifact_uri: /Users/mmondol/Documents/personal/learning-all/MLOps/mlops-project/mlruns/944915176360950038/437d34e2726340219f9242f97d42e4fb/artifacts
+end_time: 1761980447807
+entry_point_name: ''
+experiment_id: '944915176360950038'
+lifecycle_stage: active
+run_id: 437d34e2726340219f9242f97d42e4fb
+run_name: RandomForest_Model_Training_Run_20251101_150036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761980436747
+status: 3
+tags: []
+user_id: mmondol

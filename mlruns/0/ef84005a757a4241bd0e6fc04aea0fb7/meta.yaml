@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/ef84005a757a4241bd0e6fc04aea0fb7/artifacts
+end_time: 1761979010159
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ef84005a757a4241bd0e6fc04aea0fb7
+run_name: LogisticRegression_Model_Training_Run_20251101_143631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761979007319
+status: 3
+tags: []
+user_id: mmondol

@@ -5,8 +5,10 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import ModelTrainer
 
 from dataclasses import dataclass
+
 
 
 @dataclass
@@ -70,5 +72,8 @@ if __name__ == "__main__":
     train_arr, test_arr, _ = data_transformation.initiate_data_transformation(
         train_data, test_data
     )
+
+    modeltrainer = ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr, test_arr))
 
     logging.info("Data transformation process completed")
