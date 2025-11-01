@@ -187,7 +187,7 @@ entity_key_serialization_version: 3
 
             # Apply entity first
             self.feature_store.apply([entity])
-            
+
             features_view = FeatureView(
                 name=f"{entity_id}_features",
                 entities=[entity],

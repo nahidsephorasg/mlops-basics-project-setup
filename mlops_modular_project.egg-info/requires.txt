@@ -3,6 +3,7 @@ pandas
 scikit-learn
 dvc
 feast
+mlflow
 
 [dev]
 pytest>=7.1.1

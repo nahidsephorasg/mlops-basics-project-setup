@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/bb75614003be42b7b99b478354e99469/artifacts
+end_time: 1761979007310
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb75614003be42b7b99b478354e99469
+run_name: DecisionTree_Model_Training_Run_20251101_143631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761979003431
+status: 3
+tags: []
+user_id: mmondol

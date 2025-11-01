@@ -2,13 +2,13 @@
 R
 2
 	entity_id	Entity ID"	entity_idJmlops_project
-ÏË“Èè…µ®ƒÌ“ÈˆÆ³®
+ÏË“Èè…µ®’à–Èğ·™
 D
 $
 __dummy"
 __dummy_idJmlops_project
-ÏË“È°¯É®ƒÌ“Èøÿ®1"$0f3c1289-90b6-4826-8a5f-70a839297342*…Ì“ÈèÉëÏ2Í
-ò
+ÏË“È°¯É®’à–ÈÀÿ±š1"$289ca8fb-9b9a-4b57-9e8f-d3ea64a0a92e*”à–Èàüô¿2¼
+ó
 train_featuresmlops_project	entity_id"
 age"
 	workclass"
@@ -22,15 +22,23 @@ occupation"
 capital.gain"
 capital.loss"
 hours.per.week"
-native.country*&
+native.country*
+teamMLops*&
 
-created_byDataTransformationModule*
-teamMLops*
-	entity_idtrain2€ç„:¢event_timestampZdata/train_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/train_features.parquet’ÏË“ÈØØ©®"Ì“ÈÈ™”c@b
-	entity_idV
-ÏË“ÈÀßÁ´„Ì“ÈØ¥‡¼
+created_byDataTransformationModule*
+	entity_idtrain2€ç„:£event_timestampZdata/train_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/train_features.parquet’à–È¸ß¢"à–È¸Äó¥@b
+	entity_idÃ
+ÏË“ÈÀßÁ´”à–ÈÀú«h
 ŠÈ€½dĞšÈĞÌd
-ƒŠÈè”¶¯ƒĞšÈ¸¤¶¯2®
+ƒŠÈè”¶¯ƒĞšÈ¸¤¶¯
+ª‹È¸‰¹±ªÑšÈˆ™¹±
+¬‹ÈØ¹¶»¬ÑšÈ¨É¶»
+ë’“È€æ‚îëØÈĞõ‚î
+í’“È€ş´®íØÈĞµ®
+Ë“ÈØ©µÈËãÈ¨¹µÈ
+Î“ÈØÎú(ÎãÈ¨Şú(
+“Èğÿä¦äÈÀå¦
+’“È¸“Èš’äÈˆ£Èš2
 ï
 test_featuresmlops_project	entity_id"
 age"
@@ -45,14 +53,22 @@ occupation"
 capital.gain"
 capital.loss"
 hours.per.week"
-native.country*&
+native.country*
+teamMLops*&
 
-created_byDataTransformationModule*
-teamMLops*
-	entity_idtest2€ç„:¡event_timestampZdata/test_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/test_features.parquet’ƒÌ“ÈÈ®¦®"ƒÌ“È°Ïñ®@b
-	entity_id:
-ƒÌ“È€Óõ®…Ì“ÈÀ¡áÏ
-ƒŠÈè”¶¯ƒĞšÈ¸¤¶¯b²event_timestampZdata/train_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/train_features.parquetªmlops_project’ÏË“ÈØØ©®"Ì“ÈÈ™”cb±event_timestampZdata/test_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/test_features.parquetªmlops_project’ƒÌ“ÈÈ®¦®"ƒÌ“È°Ïñ®z5
+created_byDataTransformationModule*
+	entity_idtest2€ç„:¡event_timestampZdata/test_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/test_features.parquet’’à–Èà“™"’à–ÈèëÒ™@b
+	entity_id¨
+ƒÌ“È€Óõ®”à–Èğôç¿
+ƒŠÈè”¶¯ƒĞšÈ¸¤¶¯
+ª‹È¸‰¹±ªÑšÈˆ™¹±
+¬‹ÈØ¹¶»¬ÑšÈ¨É¶»
+ë’“È€æ‚îëØÈĞõ‚î
+í’“È€ş´®íØÈĞµ®
+Ë“ÈØ©µÈËãÈ¨¹µÈ
+Î“ÈØÎú(ÎãÈ¨Şú(
+“Èğÿä¦äÈÀå¦
+’“È¸“Èš’äÈˆ£Èšb²event_timestampZdata/train_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/train_features.parquetªmlops_project’ÏË“ÈØØ©®"Ì“ÈÈ™”cb±event_timestampZdata/test_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data/test_features.parquetªmlops_project’ƒÌ“ÈÈ®¦®"ƒÌ“È°Ïñ®z5
 mlops_project$7a9ee851-24d1-4ee3-b4af-9e3eec4473d5Š/
 
 mlops_project

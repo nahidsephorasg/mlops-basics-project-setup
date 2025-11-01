@@ -1,0 +1,14 @@
+artifact_uri: /Users/mmondol/Documents/personal/learning-all/MLOps/mlops-project/mlruns/944915176360950038/3ad6b876ed9b4264b34cdab04d6122ed/artifacts
+end_time: 1761980451386
+entry_point_name: ''
+experiment_id: '944915176360950038'
+lifecycle_stage: active
+run_id: 3ad6b876ed9b4264b34cdab04d6122ed
+run_name: DecisionTree_Model_Training_Run_20251101_150036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761980447809
+status: 3
+tags: []
+user_id: mmondol

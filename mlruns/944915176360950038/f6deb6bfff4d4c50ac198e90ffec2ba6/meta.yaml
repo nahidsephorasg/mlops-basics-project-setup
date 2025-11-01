@@ -1,0 +1,14 @@
+artifact_uri: /Users/mmondol/Documents/personal/learning-all/MLOps/mlops-project/mlruns/944915176360950038/f6deb6bfff4d4c50ac198e90ffec2ba6/artifacts
+end_time: 1761980453580
+entry_point_name: ''
+experiment_id: '944915176360950038'
+lifecycle_stage: active
+run_id: f6deb6bfff4d4c50ac198e90ffec2ba6
+run_name: LogisticRegression_Model_Training_Run_20251101_150036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761980451388
+status: 3
+tags: []
+user_id: mmondol

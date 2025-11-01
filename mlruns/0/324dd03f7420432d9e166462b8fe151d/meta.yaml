@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/324dd03f7420432d9e166462b8fe151d/artifacts
+end_time: 1761979012132
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 324dd03f7420432d9e166462b8fe151d
+run_name: Best_Model_SummaryModel_Training_Run_20251101_143631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761979010171
+status: 3
+tags: []
+user_id: mmondol
